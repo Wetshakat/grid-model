@@ -1,0 +1,70 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .container {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "one one two four"
+      "one one three four"
+      "five six six seven"
+      "five eight eight seven";
+    width: 90%;
+    max-width: 1100px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .container div {
+    width: 100%;
+    background: #ece6ec;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .l-one { grid-area: one; 
+    background: #eef111; 
+    color: white; }
+
+  .l-two { grid-area: two;
+     background: #ffcc5c;
+     }
+  .l-three { grid-area: three; 
+    background: #ffcc5c; }
+
+  .l-four { grid-area: four;
+     background: #d9b3ff; }
+
+  .l-five { grid-area: five; 
+    background: #6b46c1;
+     color: white; }
+
+  .l-six { grid-area: six; 
+    background: #ffcc5c; }
+
+  .l-seven { grid-area: seven; 
+    
+ background: #ffcc5c; }
+ 
+  .l-eight { grid-area: eight; 
+    background: #0a0013; }
+  
